@@ -1,5 +1,5 @@
 {% set name = "llckbdm" %}
-{% set version = "0.2.3" %}
+{% set version = "0.2.4" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/llckbdm-{{ version }}.tar.gz
-  sha256: 876a7b9a9cd11ada2aa966df253a225b1d42fcaeaf012c68535a6dfcfc811f80
+  sha256: f21a20d3ffb5f113a7bfc71642c6ea103e6dc7545eca4cd281e010f09b23a993
 
 build:
   number: 0
