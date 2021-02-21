@@ -5,11 +5,11 @@ Home: https://github.com/danilomendesdias/llckbdm
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/llckbdm-feedstock/blob/master/LICENSE.txt)
 
 Summary: Line List Clustering Krylov Basis Diagonalization Method implementation in Python
 
-
+Development: https://github.com/danilomendesdias/llckbdm
 
 Current build status
 ====================
