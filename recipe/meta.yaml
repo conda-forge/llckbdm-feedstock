@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/llckbdm-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/llckbdm-{{ version }}.tar.gz
   sha256: 73d388c3f3fe3cbc5c3eec2fb18039556fb838b1a1c006a31db54987fbcde10e
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -19,17 +19,19 @@ requirements:
   host:
     - pip
     - pytest-runner
-    - python >=3.6
+    - python {{ python_min }}
   run:
     - attrs
     - hdbscan
     - numpy
     - pandas
-    - python >=3.6
+    - python >={{ python_min }}
     - scipy
     - scikit-learn
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - llckbdm
     - llckbdm._tests
